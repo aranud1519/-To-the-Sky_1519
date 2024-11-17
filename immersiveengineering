@@ -7,12 +7,20 @@ onEvent('recipes', event => {
         "time":1200 
     })
 
+ event.custom({"type":"immersiveengineering:coke_oven",
+        "result":{"tag":"forge:storage_blocks/coal_coke"},
+        "input":{"item":"minecraft:coal_block"},
+        "creosote":5100,
+        "time":1000
+    })
+
     event.custom({"type":"immersiveengineering:blast_furnace",
         "result":{"tag":"forge:ingots/steel"},
         "input":{"tag":"forge:ingots/iron"},
         "slag":{"tag":"forge:slag"},
         "time":1900
     })
+
     event.custom({"type":"minecraft:crafting_shaped",
         "pattern":
         ["csc",
